@@ -5,7 +5,7 @@
     <client name="LameDuckService">
       <wsdl-url>http://localhost:8080/LameDuckService/LameDuckService?wsdl</wsdl-url>
       <local-wsdl-file>localhost_8080/LameDuckService/LameDuckService.wsdl</local-wsdl-file>
-      <package-name>dtu.ws.group8.lameduck</package-name>
+      <package-name forceReplace="true">dtu.ws.group8.lameduck.client</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -23,6 +23,10 @@
         <wsimport-option>
           <wsimport-option-name>xendorsed</wsimport-option-name>
           <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>dtu.ws.group8.lameduck.client</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>

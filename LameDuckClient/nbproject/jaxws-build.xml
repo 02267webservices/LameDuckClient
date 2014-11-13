@@ -21,7 +21,7 @@
     <target name="wsimport-client-LameDuckService" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/LameDuckService"/>
         <property name="wsdl-LameDuckService" location="xml-resources/web-service-references/LameDuckService/wsdl/localhost_8080/LameDuckService/LameDuckService.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/LameDuckService" destdir="${build.generated.dir}/jax-wsCache/LameDuckService" wsdl="${wsdl-LameDuckService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://localhost:8080/LameDuckService/LameDuckService?wsdl" xendorsed="true">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/LameDuckService" destdir="${build.generated.dir}/jax-wsCache/LameDuckService" wsdl="${wsdl-LameDuckService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://localhost:8080/LameDuckService/LameDuckService?wsdl" xendorsed="true" package="dtu.ws.group8.lameduck.client">
             <depends file="${wsdl-LameDuckService}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/LameDuckService"/>
         </wsimport>
@@ -33,7 +33,7 @@
     </target>
     <target name="wsimport-client-clean-LameDuckService" depends="-init-project">
         <delete dir="${build.generated.dir}/jax-wsCache/LameDuckService"/>
-        <delete dir="${build.generated.sources.dir}/jax-ws/dtu/ws/group8/lameduck"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/dtu/ws/group8/lameduck/client"/>
     </target>
     <target name="wsimport-client-generate" depends="wsimport-client-LameDuckService"/>
 </project>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Christians-MacBook-Pro-2.local" name="dtu.ws.group8.lameduck.client.LameDuckTest" tests="1" time="3.37" timestamp="2014-11-10T09:48:20">
+<testsuite errors="0" failures="0" hostname="Christians-MacBook-Pro-3.local" name="dtu.ws.group8.lameduck.client.LameDuckTest" tests="3" time="0.718" timestamp="2014-11-13T10:54:13">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -11,7 +11,7 @@
     <property name="ant.core.lib" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant.jar" />
     <property name="javadoc.windowtitle" value="" />
     <property name="libs.jsp-compilation.javadoc" value="" />
-    <property name="user.dir" value="/Users/gravr/NetBeansProjects/LameDuckClient3" />
+    <property name="user.dir" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient" />
     <property name="com.apple.mrj.application.apple.menu.about.name" value="OpenESB IDE" />
     <property name="libs.javaee-api-7.0.src" value="" />
     <property name="libs.hibernate-persistence.javadoc" value="" />
@@ -44,10 +44,12 @@
     <property name="libs.beans-binding.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/beansbinding-1.2.1.jar" />
     <property name="libs.javaee-endorsed-api-7.0.maven-pom" value="" />
     <property name="ap.proc.none.internal" value="" />
+    <property name="org.whattf.datatype.lang-registry" value="jar:file:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_language_subtag_registry" />
     <property name="libs.restapi.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jsr311-api-1.1.1-javadoc.zip" />
     <property name="mrj.version" value="1070.1.6.0_65-462" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
     <property name="libs.testng.src" value="" />
+    <property name="nu.validator.spec.alt-advice" value="jar:file:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_Validator_nu_alt_advice" />
     <property name="libs.spring-webmvc3.0.src" value="" />
     <property name="libs.restapi.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/rest/jsr311-api-1.1.1.jar" />
     <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
@@ -60,7 +62,7 @@
     <property name="copylibs.rebase" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner dtu.ws.group8.lameduck.client.LameDuckTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/gravr/NetBeansProjects/LameDuckClient3/build/test/results/TEST-dtu.ws.group8.lameduck.client.LameDuckTest.xml crashfile=/Users/gravr/NetBeansProjects/LameDuckClient3/build/junitvmwatcher5431786842853394041.properties propsfile=/Users/gravr/NetBeansProjects/LameDuckClient3/build/junit6470748075053214321.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner dtu.ws.group8.lameduck.client.LameDuckTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/test/results/TEST-dtu.ws.group8.lameduck.client.LameDuckTest.xml crashfile=/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/junitvmwatcher7101471570901651456.properties propsfile=/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/junit2757485032598717063.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="build.sysclasspath" value="ignore" />
     <property name="ap.supported.internal" value="true" />
@@ -101,7 +103,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="/" />
-    <property name="javac.includesfile.binary" value="/Users/gravr/NetBeansProjects/LameDuckClient3/null267102662" />
+    <property name="javac.includesfile.binary" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/null1830167957" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/platform/modules/ext/junit-4.10.jar" />
@@ -114,7 +116,7 @@
     <property name="libs.junit.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/junit-3.8.2.jar" />
     <property name="libs.jaxb.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/docs/jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/antlr-2.7.2.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/bsf-2.3.0.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-beanutils-1.8.0.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-chain-1.2.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-digester-1.8.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-fileupload-1.1.1.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-io-1.1.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-logging-1.0.4.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/commons-validator-1.3.1.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/jstl-1.0.2.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/oro-2.0.8.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/standard-1.0.6.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-core-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-el-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-extras-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-faces-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-mailreader-dao-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-scripting-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-taglib-1.3.10.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/struts/struts-tiles-1.3.10.jar" />
-    <property name="javac.includes.binary" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build/test/classes/dtu/ws/group8/lameduck/client/LameDuckTest.class" />
+    <property name="javac.includes.binary" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/test/classes/dtu/ws/group8/lameduck/client/LameDuckTest.class" />
     <property name="ant.home" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant" />
     <property name="libs.junit_4.src" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/docs/junit-4.10-sources.jar" />
     <property name="libs.testng.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/platform/modules/ext/testng-6.5.1-dist.jar" />
@@ -129,7 +131,7 @@
     <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
     <property name="libs.PostgreSQLDriver.src" value="" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="basedir" value="/Users/gravr/NetBeansProjects/LameDuckClient3" />
+    <property name="basedir" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient" />
     <property name="libs.jpa20-persistence.maven-pom" value="" />
     <property name="jar.compress" value="false" />
     <property name="libs.javaee-web-api-7.0.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee-web-api-7.0.jar" />
@@ -148,6 +150,7 @@
     <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
     <property name="libs.spring-framework.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/org-apache-commons-logging.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/cglib-2.2.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring/spring-2.5.6.SEC03.jar" />
     <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="org.whattf.datatype.charset-registry" value="jar:file:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_character_sets" />
     <property name="test.binaryincludes" value="&lt;nothing&gt;" />
     <property name="manifest.available" value="true" />
     <property name="libs.primefaces.javadoc" value="" />
@@ -174,11 +177,11 @@
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="sun.cpu.endian" value="little" />
     <property name="libs.JAXB-ENDORSED.javadoc" value="" />
-    <property name="wsdl-LameDuckService" value="/Users/gravr/NetBeansProjects/LameDuckClient3/xml-resources/web-service-references/LameDuckService/wsdl/localhost_8080/LameDuckService/LameDuckService.wsdl" />
+    <property name="wsdl-LameDuckService" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/xml-resources/web-service-references/LameDuckService/wsdl/localhost_8080/LameDuckService/LameDuckService.wsdl" />
     <property name="libs.JWSAntTasks.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
     <property name="libs.spring-framework300.src" value="" />
     <property name="libs.PojoSELib.src" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/soa/modules/ext/sun-pojo-engine-api-src.jar" />
-    <property name="empty.dir" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build/empty" />
+    <property name="empty.dir" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/empty" />
     <property name="version-output" value="java version &quot;1.6" />
     <property name="test.binarytestincludes" value="" />
     <property name="javadoc.preview" value="true" />
@@ -221,7 +224,7 @@
     <property name="javac.processorpath" value="" />
     <property name="libs.spring-webmvc.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/spring/spring-webmvc-2.5.6.SEC03.jar" />
     <property name="javac.compilerargs" value="" />
-    <property name="ant.file" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build.xml" />
+    <property name="ant.file" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build.xml" />
     <property name="libs.beans-binding.maven-pom" value="" />
     <property name="libs.jsf12.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/commons-beanutils.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/commons-collections.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/commons-digester.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/commons-logging.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/jsf-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-1_2/jsf-impl.jar" />
     <property name="sun.awt.exception.handler" value="apple.awt.CToolkit$EventQueueExceptionHandler" />
@@ -240,6 +243,7 @@
     <property name="endorsed.classpath.cmd.line.arg" value="-Xbootclasspath/p:&apos;/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/jaxws22/api/jaxws-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb-impl.jar&apos;" />
     <property name="junit.available" value="true" />
     <property name="libs.jsp-compiler.src" value="" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
     <property name="libs.Encoder-COCO.src" value="" />
     <property name="mrj.build" value="11M4609" />
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
@@ -266,7 +270,7 @@
     <property name="annotation.processing.processors.list" value="" />
     <property name="libs.primefaces.maven-pom" value="" />
     <property name="debug-args-line" value="-Xdebug" />
-    <property name="ant.file.LameDuckClient3-impl" value="/Users/gravr/NetBeansProjects/LameDuckClient3/nbproject/build-impl.xml" />
+    <property name="ant.file.LameDuckClient3-impl" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/nbproject/build-impl.xml" />
     <property name="libs.javaee-api-6.0.maven-pom" value="" />
     <property name="libs.JWSAntTasks.src" value="" />
     <property name="jar.index" value="false" />
@@ -275,6 +279,7 @@
     <property name="libs.hibernate-persistence.maven-pom" value="" />
     <property name="libs.absolutelayout.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="nu.validator.spec.microsyntax-descriptions" value="jar:file:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_MicrosyntaxDescriptions" />
     <property name="libs.Encoder-COCO.maven-pom" value="" />
     <property name="ide.module.install.dir" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules" />
     <property name="java.specification.vendor" value="Sun Microsystems Inc." />
@@ -287,11 +292,11 @@
     <property name="source.encoding" value="UTF-8" />
     <property name="ap.cmd.line.internal" value="" />
     <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
-    <property name="awt.nativeDoubleBuffering" value="true" />
     <property name="libs.jsp-compilation-syscp.javadoc" value="" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
     <property name="libs.junit.maven-pom" value="" />
-    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
     <property name="libs.javaee-endorsed-api-7.0.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee7-endorsed/javax.annotation-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee7-endorsed/javax.xml.soap-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee7-endorsed/jaxb-api-osgi.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee7-endorsed/jaxws-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/javaee7-endorsed/jsr181-api.jar" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
     <property name="libs.metro.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/metro-1.4-doc.zip" />
     <property name="libs.struts.maven-pom" value="" />
     <property name="netbeans.home+have.tests" value="true" />
@@ -299,7 +304,7 @@
     <property name="libs.testng.maven-pom" value="" />
     <property name="libs.jaxb.src" value="" />
     <property name="libs.Encoder-HL7.maven-pom" value="" />
-    <property name="work.dir" value="/Users/gravr/NetBeansProjects/LameDuckClient3" />
+    <property name="work.dir" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient" />
     <property name="libs.jaxb.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb-impl.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb-xjc.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb1-impl.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/activation.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/api/jaxb-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/api/jsr173_1.0_api.jar" />
     <property name="do.depend" value="false" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
@@ -309,8 +314,8 @@
     <property name="libs.restlib.src" value="" />
     <property name="javac.source" value="1.6" />
     <property name="build.generated.dir" value="build/generated" />
-    <property name="line.separator" value="&#xa;" />
     <property name="libs.hibernate-persistence.src" value="" />
+    <property name="line.separator" value="&#xa;" />
     <property name="java.specification.version" value="1.6" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="libs.jaxws21.maven-pom" value="" />
@@ -320,7 +325,7 @@
     <property name="libs.spring-framework.maven-pom" value="" />
     <property name="sun.boot.class.path" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/jaxws22/api/jaxws-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb-impl.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
     <property name="javac.target" value="1.6" />
-    <property name="built-jar.properties" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build/built-jar.properties" />
+    <property name="built-jar.properties" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/built-jar.properties" />
     <property name="build.test.classes.dir" value="build/test/classes" />
     <property name="libs.Encoder-Framework.maven-pom" value="" />
     <property name="src.dir" value="src" />
@@ -342,8 +347,8 @@
     <property name="sun.jnu.encoding" value="MacRoman" />
     <property name="libs.MySQLDriver.src" value="" />
     <property name="libs.Encoder-COCO.javadoc" value="" />
-    <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="build.test.results.dir" value="build/test/results" />
     <property name="libs.ejb3-persistence.javadoc" value="" />
     <property name="jna.platform.library.path" value="/usr/lib:/usr/lib" />
     <property name="default.javac.target" value="1.6" />
@@ -359,11 +364,11 @@
     <property name="endorsed.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/jaxws22/api/jaxws-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/jaxb-impl.jar" />
     <property name="libs.absolutelayout.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/AbsoluteLayout.jar" />
     <property name="excludes" value="" />
-    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.metro.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/activation.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/metro/webservices-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/metro/webservices-extra-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/metro/webservices-extra.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/metro/webservices-rt.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/metro/webservices-tools.jar" />
-    <property name="ant.file.LameDuckClient3" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build.xml" />
+    <property name="libs.restlib.maven-pom" value="" />
+    <property name="ant.file.LameDuckClient3" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build.xml" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
-    <property name="java.class.path" value="/Users/gravr/NetBeansProjects/LameDuckClient3/build/classes:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/platform/modules/ext/junit-4.10.jar:/Users/gravr/NetBeansProjects/LameDuckClient3/build/test/classes:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-launcher.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-junit.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-junit4.jar" />
+    <property name="java.class.path" value="/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/classes:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/platform/modules/ext/junit-4.10.jar:/Users/gravr/NetBeansProjects/LameDuckClientGitHub/LameDuckClient/build/test/classes:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-launcher.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-junit.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.jpa20-persistence.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/eclipselink/javax.persistence_2.1.0.v201304241213.jar" />
@@ -374,10 +379,10 @@
     <property name="compile.on.save.unsupported.jaxws" value="true" />
     <property name="libs.restlib.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-apache-client-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-atom-abdera-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-guice-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-multipart-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-simple-server-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/jersey-spring-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/oauth-client-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/oauth-server-1.13-javadoc.zip:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/oauth-signature-1.13-javadoc.zip" />
     <property name="libs.JAXB-ENDORSED.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/jaxb/api/jaxb-api.jar" />
-    <property name="libs.javaee-api-7.0.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/javaee-doc-api.jar" />
     <property name="libs.eclipselink.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/eclipselink/eclipselink.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/eclipselink/javax.persistence_2.1.0.v201304241213.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql_2.5.0.v20130507-3faac2b.jar" />
-    <property name="libs.beans-binding.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="libs.javaee-api-7.0.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/javaee-doc-api.jar" />
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="libs.beans-binding.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/docs/beansbinding-1.2.1-doc.zip" />
     <property name="java.vm.vendor" value="Apple Inc." />
     <property name="libs.CopyLibs.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/org-apache-commons-logging.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/cglib-2.2.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-aop-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-asm-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-aspects-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-beans-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-context-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-context-support-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-core-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-expression-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-instrument-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-jdbc-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-jms-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-orm-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-oxm-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-test-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-tx-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-web-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-webmvc-3.1.1.RELEASE.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/spring-3.0/spring-struts-3.1.1.RELEASE.jar" />
@@ -386,8 +391,8 @@
     <property name="libs.spring-webmvc.maven-pom" value="" />
     <property name="run.jvmargs" value="" />
     <property name="libs.ejb3-persistence.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/modules/ext/hibernate/ejb3-persistence.jar" />
-    <property name="libs.JAXB-ENDORSED.src" value="" />
     <property name="libs.spring-framework.javadoc" value="" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
     <property name="libs.testng.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/platform/docs/testng-6.5.1-javadoc.zip" />
     <property name="libs.PostgreSQLDriver.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/ide/modules/ext/postgresql-9.2-1002.jdbc4.jar" />
     <property name="libs.jsf12.maven-pom" value="" />
@@ -396,8 +401,8 @@
     <property name="libs.junit.src" value="" />
     <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
     <property name="main.class" value="" />
-    <property name="libs.CopyLibs.src" value="" />
     <property name="build.dir" value="build" />
+    <property name="libs.CopyLibs.src" value="" />
     <property name="libs.jsp-compilation.classpath" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/servlet3.1-jsp2.3-api.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/glassfish-jspparser-4.0.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jsf-2_2/javax.faces.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/modules/ext/jstl.jar:/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/java/ant/lib/ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.4 compiled on May 22 2012" />
     <property name="file.encoding" value="MacRoman" />
@@ -408,7 +413,9 @@
     <property name="awt.toolkit" value="apple.awt.CToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="/Users/gravr/OpenESB-v2.3.1/netbeans.app/Contents/Resources/netbeans/enterprise/docs/javaee-doc-api.jar" />
   </properties>
-  <testcase classname="dtu.ws.group8.lameduck.client.LameDuckTest" name="testGetFlights" time="3.312" />
+  <testcase classname="dtu.ws.group8.lameduck.client.LameDuckTest" name="testGetFlights" time="0.583" />
+  <testcase classname="dtu.ws.group8.lameduck.client.LameDuckTest" name="testBookFlight" time="0.028" />
+  <testcase classname="dtu.ws.group8.lameduck.client.LameDuckTest" name="testCancelFlight" time="0.023" />
   <system-out><![CDATA[Size of result: 1
 Flight Reservation Service INC
 ABC1234
@@ -416,6 +423,8 @@ ABC1234
 SAS
 Berlin
 Copenhagen
+True if booked: true
+True if booking was succesful cancelled: true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

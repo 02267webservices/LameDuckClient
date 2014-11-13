@@ -4,11 +4,15 @@
  */
 package dtu.ws.group8.lameduck.client;
 
-import dtu.ws.group8.lameduck.LameDuckPortType;
-import dtu.ws.group8.lameduck.LameDuckService;
-import dtu.ws.group8.lameduck.types.FlightInfoListType;
-import dtu.ws.group8.lameduck.types.FlightInfoType;
-import dtu.ws.group8.lameduck.types.GetFlightRequestType;
+import dtu.ws.group8.lameduck.client.LameDuckWSDLPortType;
+import dtu.ws.group8.lameduck.client.LameDuckService;
+import dtu.ws.group8.lameduck.client.FlightInfoListType;
+import dtu.ws.group8.lameduck.client.FlightInfoType;
+import dtu.ws.group8.lameduck.client.GetFlightRequestType;
+import dtu.ws.group8.lameduck.client.BookFlightRequestType;
+import dtu.ws.group8.lameduck.client.CancelFlightRequestType;
+import dtu.ws.group8.lameduck.client.BookFlightFault;
+import dtu.ws.group8.lameduck.client.CancelFlightFault;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -27,9 +31,7 @@ public class LameDuckTest {
 
         LameDuckService service = new LameDuckService();
              
-        LameDuckPortType port = service.getLameDuckPort();
-             
-        // TODO initialize WS operation arguments here
+        LameDuckWSDLPortType port = service.getLameDuckPort();
              
         GetFlightRequestType input = new GetFlightRequestType();
         input.setFlightStartAirport("Copenhagen");
@@ -39,9 +41,7 @@ public class LameDuckTest {
         XMLGregorianCalendar dateFlight = df.newXMLGregorianCalendar("2015-01-01");
         input.setFlightDate(dateFlight);
              
-        // TODO process result here
-             
-        FlightInfoListType result = port.lameDuck(input);
+        FlightInfoListType result = port.getFlights(input);
         System.out.println("Size of result: " +result.getFlightInformation().size());
         
         
@@ -55,37 +55,54 @@ public class LameDuckTest {
                            myResultToPrint.getFlightInfo().getDestinationAirport() + "\n" +
                            myResultToPrint.getFlightInfo().getStartAirport());
     
-     
-        //FlightInfoType result2 = lameDuck(input).getFlightInformation().get(0);
-        
-    
     }
     
+    @Test
+    public void testBookFlight() throws BookFlightFault {
+
+        LameDuckService service = new LameDuckService();
+        LameDuckWSDLPortType port = service.getLameDuckPort();
+             
+        BookFlightRequestType input = new BookFlightRequestType();
+        input.setFlightBookingNumber("ABC1234");
+             
+        
+        try {
+            boolean result = port.bookFlight(input);
+            System.out.println("True if booked: " +result);
+            assertTrue(result);
+        }catch (BookFlightFault ex){
+            System.out.println(ex.getFaultInfo().getBookFlightFaultMessage());
+        }
+    }
     
+    @Test
+    public void testCancelFlight() throws CancelFlightFault {
+
+        LameDuckService service = new LameDuckService();
+        LameDuckWSDLPortType port = service.getLameDuckPort();
+             
+        CancelFlightRequestType input = new CancelFlightRequestType();
+        input.setFlightBookingNumber("ABC1234");
+             
+        
+        try {
+            boolean result = port.cancelFlight(input);
+            System.out.println("True if booking was succesful cancelled: " +result);
+            assertTrue(result);
+        }catch (CancelFlightFault ex){
+            System.out.println(ex.getFaultInfo().getCancelFlightFaultMassage());
+        }
+    }
     
     
     /*
-    @Test
-    public void testGetFlights() throws DatatypeConfigurationException {
-        GetFlightRequestType input = new GetFlightRequestType();
-        input.setFlightStartAirport("Copenhagen");
-        input.setFlightDestinationAirport("Berlin");
-
-        DatatypeFactory df = DatatypeFactory.newInstance();
-        XMLGregorianCalendar dateFlight = df.newXMLGregorianCalendar("2015-01-01");
-        input.setFlightDate(dateFlight);
-    
-    }
-    */
-    
-   
-    
     private static FlightInfoListType lameDuck(dtu.ws.group8.lameduck.types.GetFlightRequestType input) {
         dtu.ws.group8.lameduck.LameDuckService service = new dtu.ws.group8.lameduck.LameDuckService();
         dtu.ws.group8.lameduck.LameDuckPortType port = service.getLameDuckPort();
         return port.lameDuck(input);
     }
-   
+   */
     
     
 }

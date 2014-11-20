@@ -4,6 +4,7 @@
  */
 package dtu.ws.group8.lameduck.client;
 
+import java.util.List;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import org.junit.Test;
@@ -31,20 +32,29 @@ public class LameDuckTest {
         }
         
         FlightInfoListType result = getFlights(input);
+        
+        List<FlightInfoType> flightsInfo = result.getFlightInformation();
+        
         System.out.println("Size of result: " +result.getFlightInformation().size());
         
         
-        FlightInfoType myResultToPrint = result.getFlightInformation().get(0);
+        if (!flightsInfo.isEmpty()){
+            for (int i = 0; i < flightsInfo.size(); i++) {
+		System.out.println(flightsInfo.get(i).getFlightReservationService()+ "\n" +
+                           flightsInfo.get(i).getFlightBookingNumber()+ "\n" +
+                           Double.toString(flightsInfo.get(i).getFlightPrice()) + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getCarrierName() + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getDestinationAirport() + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getStartAirport());
+            }
+            
+            
+        }
         
-        System.out.println(myResultToPrint.getFlightReservationService()+ "\n" +
-                           myResultToPrint.getFlightBookingNumber()+ "\n" +
-                           Double.toString(myResultToPrint.getFlightPrice()) + "\n" +
-                           myResultToPrint.getFlightInfo().getCarrierName() + "\n" +
-                           myResultToPrint.getFlightInfo().getDestinationAirport() + "\n" +
-                           myResultToPrint.getFlightInfo().getStartAirport());
+        
     
     }
-    
+    /*
     @Test
     public void testBookFlight() throws BookFlightFault {
 
@@ -90,7 +100,7 @@ public class LameDuckTest {
         }
         return cardInfo;
     } 
-    
+    */
     //Webservice stubs
     private static FlightInfoListType getFlights(dtu.ws.group8.lameduck.client.GetFlightRequestType input) {
         dtu.ws.group8.lameduck.client.LameDuckService service = new dtu.ws.group8.lameduck.client.LameDuckService();

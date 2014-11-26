@@ -16,7 +16,69 @@ import static org.junit.Assert.*;
  */
 public class LameDuckTest {
     
+    @Test
+    public void lameDuckServiceTesting() {
     
+        //Testing getFlights
+        GetFlightRequestType input = new GetFlightRequestType();
+        input.setFlightStartAirport("Copenhagen");
+        input.setFlightDestinationAirport("Berlin");
+
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            XMLGregorianCalendar dateFlight = df.newXMLGregorianCalendar("2015-01-01");
+            input.setFlightDate(dateFlight);
+        }catch (Exception ex) {
+        }
+        
+        FlightInfoListType result = getFlights(input);
+        
+        List<FlightInfoType> flightsInfo = result.getFlightInformation();
+        
+        System.out.println("Size of result: " +result.getFlightInformation().size());
+        
+        
+        if (!flightsInfo.isEmpty()){
+            for (int i = 0; i < flightsInfo.size(); i++) {
+		System.out.println(flightsInfo.get(i).getFlightReservationService()+ "\n" +
+                           flightsInfo.get(i).getFlightBookingNumber()+ "\n" +
+                           Double.toString(flightsInfo.get(i).getFlightPrice()) + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getCarrierName() + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getDestinationAirport() + "\n" +
+                           flightsInfo.get(i).getFlightInfo().getStartAirport());
+            }
+        }
+        
+        //Testing bookFlight
+        BookFlightRequestType bookFlightInput = new BookFlightRequestType();
+        bookFlightInput.setFlightBookingNumber("ABC1234");        
+        bookFlightInput.setCreditCardInfo(getCardInfo());
+             
+        try {
+            boolean bookFlightResult = bookFlight(bookFlightInput);
+            System.out.println("True if booked: " +bookFlightResult);
+            assertTrue(bookFlightResult);
+        }catch (BookFlightFault ex){
+            System.out.println("Booking failed with message: " +ex.getMessage());
+        }
+        
+        //Testing cancelFlight
+        
+        CancelFlightRequestType cancelFlightInput = new CancelFlightRequestType();
+        cancelFlightInput.setFlightBookingNumber("ABC1234");
+        cancelFlightInput.setCreditCardInfo(getCardInfo());
+        
+        try {
+            boolean cancelFlightInputResult = cancelFlight(cancelFlightInput);
+            System.out.println("True if booking was succesful cancelled: " +cancelFlightInputResult);
+            assertTrue(cancelFlightInputResult);
+        }catch (CancelFlightFault ex){
+            System.out.println("Cancellation failed with message: " +ex.getMessage());
+        }
+        
+    }
+    
+    /*
     @Test
     public void testGetFlights() {
 
@@ -54,12 +116,12 @@ public class LameDuckTest {
         
     
     }
-    /*
+    
     @Test
     public void testBookFlight() throws BookFlightFault {
 
         BookFlightRequestType input = new BookFlightRequestType();
-        input.setFlightBookingNumber("ABC1234");        
+        input.setFlightBookingNumber("ABC12341");        
         input.setCreditCardInfo(getCardInfo());
              
         try {
@@ -86,6 +148,7 @@ public class LameDuckTest {
             System.out.println(ex.getFaultInfo().getCancelFlightFaultMassage());
         }
     }
+    */
     
     private CreditCardInfoType getCardInfo() {
         CreditCardInfoType cardInfo = new CreditCardInfoType();
@@ -100,7 +163,7 @@ public class LameDuckTest {
         }
         return cardInfo;
     } 
-    */
+    
     //Webservice stubs
     private static FlightInfoListType getFlights(dtu.ws.group8.lameduck.client.GetFlightRequestType input) {
         dtu.ws.group8.lameduck.client.LameDuckService service = new dtu.ws.group8.lameduck.client.LameDuckService();
